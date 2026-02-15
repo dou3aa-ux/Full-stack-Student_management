@@ -23,7 +23,7 @@ const db=mysql.createConnection({
     password:"",
     database:"students"
 })
-
+//endpoints
 app.post("/add_user", (req, res) => {
   const sql =
     "INSERT INTO student_details (`name`,`email`,`age`,`gender`) VALUES (?, ?, ?, ?)";
